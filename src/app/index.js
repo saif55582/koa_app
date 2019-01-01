@@ -5,13 +5,18 @@ const logger = require('koa-morgan')
 const responseTime = require('koa-response-time')
 const database = require('database')
 const config = require('configuration')
+const respond = require('koa-respond')
+const res = require('app/res')
+
 
 const app = new Koa()
 app.use(responseTime())
 app.use(logger('combined'))
 app.use(bodyParser())
+app.use(respond())
 app.use(router.routes())
 app.use(ctx => { ctx.type = 'json' })
+app.use(res)
 
 
 exports.start = async () => {

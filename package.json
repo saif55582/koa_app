@@ -10,9 +10,12 @@
   "author": "Saif Ali",
   "license": "ISC",
   "dependencies": {
+    "jsonwebtoken": "^8.4.0",
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
+    "koa-compose": "^4.1.0",
     "koa-morgan": "^1.0.1",
+    "koa-respond": "^2.1.0",
     "koa-response-time": "^2.1.0",
     "koa-router": "^7.4.0",
     "mongoose": "^5.4.1"
