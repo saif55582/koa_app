@@ -1,10 +1,10 @@
 const router = require('koa-router')()
 const controller = require('./controller')
-
+const respond = require('app/response')
 
 router.get('/', async (ctx) => {
     const users =  await controller.read()
-    ctx.body = users
+    respond.responseOk(ctx, 'User list', users)
 })
 
 router.post('/', async (ctx) => {
