@@ -3,6 +3,7 @@ const router = require('routing')
 const bodyParser = require('koa-bodyparser')
 const logger = require('koa-morgan')
 const responseTime = require('koa-response-time')
+const jwt = require('koa-jwt')
 const database = require('database')
 const config = require('configuration')
 

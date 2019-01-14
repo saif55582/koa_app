@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_PATH=src nodemon node index.js"
+    "start": "cross-env NODE_PATH=./src nodemon node index.js"
   },
   "author": "Saif Ali",
   "license": "ISC",
   "dependencies": {
     "koa": "^2.6.2",
     "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.5.1",
     "koa-morgan": "^1.0.1",
     "koa-response-time": "^2.1.0",
     "koa-router": "^7.4.0",
