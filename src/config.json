@@ -1,6 +1,7 @@
 {
-    "PORT": 3000,
+    "PORT": 4000,
     "JWT_SECRET": "piew8EuHY43HUjUH@3dfJUhHJubfdg328H",
     "MONGO_DATABASE_NAME": "koa_app",
-    "MONGO_URL": "mongodb://localhost:27017"
+    "MONGO_URL": "mongodb://localhost:27017",
+    "avatar": "public/avatars/"
 }

@@ -1,4 +1,4 @@
-exports.responseOk = ( ctx, msg, body = {} ) => {
+exports.responseOk = ( ctx, msg, body) => {
     ctx.status = 200
     // ctx.message = msg
     ctx.body = {
